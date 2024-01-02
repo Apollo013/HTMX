@@ -1,5 +1,7 @@
 import express from "express";
+import morgan from "morgan";
 import userApi from "./routes/user-routes.js";
+import tempApi from "./routes/temperature-routes.js";
 
 const app = express();
 
@@ -13,7 +15,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Your routes and other middleware can be added here
+app.use(morgan("dev"));
+
 app.use("/users", userApi);
+app.use("/temperature", tempApi);
 
 // Start the server
 app.listen(3000, () => {
