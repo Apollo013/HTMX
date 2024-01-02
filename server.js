@@ -2,6 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import userApi from "./routes/user-routes.js";
 import tempApi from "./routes/temperature-routes.js";
+import searchApi from "./routes/search.js";
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.use(morgan("dev"));
 
 app.use("/users", userApi);
 app.use("/temperature", tempApi);
+app.use("/search", searchApi);
 
 // Start the server
 app.listen(3000, () => {
