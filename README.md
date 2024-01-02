@@ -1,10 +1,11 @@
 # HTMX Examples
 
-A few examples on using HTMX. It uses a Node/Express server. All of the HTMX is in the `/public` .html files.
+A few examples on using HTMX.
+The examples use a Node/Express server. All of the HTMX is in the `/public` .html files.
 
 Examples include...
 
--   `request.html`: Demonstrates how to trigger events, make requests, set targets, etc
+-   `request.html`: Demonstrates how to trigger events, make GET requests, pass request params, set data output target, set loading indicator target, etc
 -
 
 ## Usage
@@ -23,7 +24,7 @@ npm run dev
 
 #### OR
 
-Run the server with node
+Run the server with node >= v18
 
 ```bash
 node --watch server.js
