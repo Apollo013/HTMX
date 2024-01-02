@@ -13,6 +13,7 @@ Examples include...
 -   `polling.html`: Example of HTMX polling using a mock weather api
 -   `search.html`: A contact search feature that filters data from jsonplaceholder/typicode.com/users
 -   `validation.html`: Form validation example
+-   `profile.html`: Profile card feature, click-to-edit -> save-and-display (uses xss lib)
 
 ## Usage
 
@@ -43,3 +44,4 @@ Visit the following pages...
 -   http://localhost:3000/polling.html
 -   http://localhost:3000/search.html
 -   http://localhost:3000/validation.html
+-   http://localhost:3000/profile.html

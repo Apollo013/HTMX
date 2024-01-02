@@ -4,6 +4,7 @@ import userApi from "./routes/user-routes.js";
 import tempApi from "./routes/temperature-routes.js";
 import searchApi from "./routes/search-routes.js";
 import validatorApi from "./routes/validation-routes.js";
+import profileApi from "./routes/profile-routes.js";
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.use("/users", userApi);
 app.use("/temperature", tempApi);
 app.use("/search", searchApi);
 app.use("/validation", validatorApi);
+app.use("/profile", profileApi);
 
 // Start the server
 app.listen(3000, () => {
