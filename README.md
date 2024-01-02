@@ -6,8 +6,8 @@ The examples use a Node/Express server. All of the HTMX is in the `/public` .htm
 Examples include...
 
 -   `request.html`: Demonstrates how to trigger events, make GET requests, pass request params, set data output target, set loading indicator target, etc
--   `temperature.html`: Simple temperature converter that demonstrates form submission with HTMX
--   `polling.html`: Example of polling using a mock weather api
+-   `temperature.html`: Simple temperature converter that demonstrates form submission (POST request) with HTMX
+-   `polling.html`: Example of HTMX polling using a mock weather api
 
 ## Usage
 

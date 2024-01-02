@@ -4,7 +4,7 @@ const router = express.Router();
 
 // Define your routes here
 
-// Handle POST request for temp conversion
+// Handle POST request for temperature conversion
 router.post("/convert", (req, res) => {
     setTimeout(() => {
         const fahrenheit = parseFloat(req.body.fahrenheit);
@@ -22,7 +22,7 @@ router.post("/convert", (req, res) => {
 
 let currentTemperature = 0;
 
-// Handle GET request for weather
+// Handle GET request for weather polling
 router.get("/poll", (req, res) => {
     currentTemperature += Math.random() * 2 - 1; // Random temp change
     res.send(currentTemperature.toFixed(1) + "°C");
