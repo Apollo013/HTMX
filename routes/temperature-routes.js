@@ -8,7 +8,7 @@ const router = express.Router();
 router.post("/convert", (req, res) => {
     setTimeout(() => {
         const fahrenheit = parseFloat(req.body.fahrenheit);
-        const celsius = ((fahrenheit - 32) * 5) / 9;
+        const celsius = (fahrenheit - 32) * (5 / 9);
 
         console.log("fahrenheit", fahrenheit, "celsius", celsius);
 
@@ -20,7 +20,7 @@ router.post("/convert", (req, res) => {
     }, 2000);
 });
 
-let currentTemperature = 0;
+let currentTemperature = 10;
 
 // Handle GET request for weather polling
 router.get("/poll", (req, res) => {
