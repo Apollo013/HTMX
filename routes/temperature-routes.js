@@ -20,4 +20,12 @@ router.post("/convert", (req, res) => {
     }, 2000);
 });
 
+let currentTemperature = 0;
+
+// Handle GET request for weather
+router.get("/poll", (req, res) => {
+    currentTemperature += Math.random() * 2 - 1; // Random temp change
+    res.send(currentTemperature.toFixed(1) + "°C");
+});
+
 export default router;
