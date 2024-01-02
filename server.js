@@ -2,7 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import userApi from "./routes/user-routes.js";
 import tempApi from "./routes/temperature-routes.js";
-import searchApi from "./routes/search.js";
+import searchApi from "./routes/search-routes.js";
 import validatorApi from "./routes/validation-routes.js";
 
 const app = express();
